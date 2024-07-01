@@ -10,7 +10,10 @@ interface DataSectionProps {
 function DataSection({userData}:DataSectionProps):JSX.Element | null {
     
     return (
-        <div className={styles.dataSection}></div>
+        <div className={styles.dataSection}>
+            {userData?.profile}
+            {userData?.stats}
+        </div>
     )
 }
 export default DataSection;
