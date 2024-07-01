@@ -1,18 +1,16 @@
+import { User } from "../../models/User";
 import styles from "./DataSection.module.css"
-interface UserData {
-    profile:any;
-    stats:any;
-}
+
 interface DataSectionProps {
-    userData: UserData | null;
+    User: User | null;
 }
 
-function DataSection({userData}:DataSectionProps):JSX.Element | null {
+function DataSection({User}:DataSectionProps):JSX.Element | null {
     
     return (
         <div className={styles.dataSection}>
-            {userData?.profile}
-            {userData?.stats}
+            {User?.profile}
+            {User?.stats}
         </div>
     )
 }

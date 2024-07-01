@@ -3,10 +3,11 @@ import Home from './components/Home/Home';
 import Layout from './layouts/Layout';
 import DataSection from './components/DataSection/DataSection';
 import { dataService } from './services/DataService';
+import { User } from './models/User';
 
 function App() {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const [userData, setUserData] = useState<any | null>(null); // Replace 'any' with a more specific type when available
+    const [userData, setUserData] = useState<User | null>(null); // Replace 'any' with a more specific type when available
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
@@ -14,7 +15,7 @@ function App() {
         setIsLoading(true);
         setError(null);
         try {
-            const data = await dataService.getUserProfileData(username);
+            const data = await dataService.getUserData(username);
             setUserData(data);
         } 
         catch (err) {
