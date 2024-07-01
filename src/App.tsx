@@ -7,7 +7,7 @@ import { User } from './models/User';
 
 function App() {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const [userData, setUserData] = useState<User | null>(null); // Replace 'any' with a more specific type when available
+    const [userData, setUserData] = useState<User | null>(null); 
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
@@ -16,6 +16,8 @@ function App() {
         setError(null);
         try {
             const data = await dataService.getUserData(username);
+            console.log(data);
+            
             setUserData(data);
         } 
         catch (err) {

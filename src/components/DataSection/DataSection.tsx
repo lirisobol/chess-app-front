@@ -1,17 +1,18 @@
-import { User } from "../../models/User";
-import styles from "./DataSection.module.css"
+import styles from "./DataSection.module.css";
+import { User } from '../../models/User';  // Adjust the import path as necessary
 
 interface DataSectionProps {
-    User: User | null;
+    userData: User | null;
 }
 
-function DataSection({User}:DataSectionProps):JSX.Element | null {
-    
+function DataSection({ userData }: DataSectionProps): JSX.Element | null {
+    if (!userData) return null;
+
     return (
         <div className={styles.dataSection}>
-            {User?.profile}
-            {User?.stats}
+            {userData.profile.joined}
         </div>
-    )
+    );
 }
+
 export default DataSection;
