@@ -17,6 +17,8 @@ class DataService {
     // URL pattern: https://api.chess.com/pub/player/{username}
     public async getUserProfileData(username: string): Promise<UserProfile> {
         const response = await axios.get(`${appConfig.CORS_PROXY}${encodeURIComponent(`${appConfig.CHESS_COM_BASE_URL}${username}`)}`);
+        console.log(response);
+        
         const data = JSON.parse(response.data.contents);
         return data as UserProfile;
     }
