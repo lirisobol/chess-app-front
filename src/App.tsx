@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Home from './components/Home/Home';
+import Home from './components/HomeSection/HomeSection';
 import Layout from './layouts/Layout';
 import DataSection from './components/DataSection/DataSection';
 import { dataService } from './services/DataService';

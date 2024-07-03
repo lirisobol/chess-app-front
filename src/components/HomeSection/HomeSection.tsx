@@ -1,5 +1,5 @@
 import { useState } from "react";
-import localStyles from "./Home.module.css";
+import localStyles from "./HomeSection.module.css";
 
 interface HomeProps {
     onSearch: (username:string) => void;
@@ -18,7 +18,7 @@ function Home({onSearch}:HomeProps):JSX.Element {
     return (
         <section className={localStyles.home}>
 
-            <div className={localStyles.headingContainer}>
+            <div>
                 <h1 className={localStyles.title} >ChessLens</h1>    
                 <h4 className={localStyles.phrase}>" Vision Beyond the Board "</h4>
             </div>

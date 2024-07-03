@@ -15,4 +15,7 @@ export interface UserProfile {
     status: string;
     is_streamer: boolean;
     verified: boolean;
+    title: string;
+    fide: number;
+    location: string;
 }
