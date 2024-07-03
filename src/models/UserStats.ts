@@ -13,9 +13,11 @@ export interface ChessVariantStats {
         win: number;
         loss: number;
         draw: number;
+        time_per_move?: number; // Optional since not all modes have it
+        timeout_percent?: number; // Optional since not all modes have it
     };
 }
-  
+
 export interface TacticsStats {
     highest: {
         rating: number;
@@ -26,15 +28,16 @@ export interface TacticsStats {
         date: number;
     };
 }
-  
+
 export interface UserStats {
     chess_daily?: ChessVariantStats;
+    chess960_daily?: ChessVariantStats;
     chess_rapid?: ChessVariantStats;
     chess_bullet?: ChessVariantStats;
     chess_blitz?: ChessVariantStats;
     fide?: number;
     tactics: TacticsStats;
-    lessons: {
+    lessons?: { 
         highest: {
             rating: number;
             date: number;

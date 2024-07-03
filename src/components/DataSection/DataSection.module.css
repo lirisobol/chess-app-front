@@ -7,11 +7,9 @@
 .profileWrapper {
     flex: 0 0 20%; 
     max-height: 30%; 
-    background-color: #dddcdc; 
 }
 
 .statsWrapper {
     flex: 1;
     overflow-y: auto;
-    background-color: #939393; 
 }
