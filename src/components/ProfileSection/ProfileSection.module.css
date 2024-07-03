@@ -1,5 +1,29 @@
 .profileSection {
     margin: 0;
-    padding: 0; 
-    background-color: brown;   
+    padding: 1rem; 
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: kanit;
+}
+/* .profileSection > * {
+    border: 1px solid;
+} */
+.avatar > img {
+    width: 80%;
+    border-radius: 120px;
+}
+.userName > h1 {
+    font-weight: 200;
+    font-size: 4rem;
+}
+.userName > h3 {
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+.userDetails > h3 {
+    font-weight: 200;
+    font-size: 1.3rem;
 }
