@@ -1,13 +1,20 @@
 import { fromUnixTime } from "date-fns/fromUnixTime";
 import { UserProfile } from "../../models/UserProfile";
 import localStyles from "./ProfileSection.module.css";
+import { format } from "date-fns";
 
 interface ProfileSectionProps { 
     userProfileData: UserProfile | null;
 }
 
 function ProfileSection({userProfileData}: ProfileSectionProps): JSX.Element | null {
-    const joinedDate:Date = fromUnixTime(userProfileData?.joined);
+    if (!userProfileData) return null;
+
+    // Initialize joinedDate as a string or null
+    let joinedDate: string | null = null;
+    if (userProfileData.joined !== undefined) {
+        joinedDate = format(fromUnixTime(userProfileData.joined), 'yyyy-MM-dd');
+    }
 
     return (
         <section className={localStyles.profileSection}>
@@ -28,7 +35,7 @@ function ProfileSection({userProfileData}: ProfileSectionProps): JSX.Element | n
                     <h3>Title: {userProfileData.title}</h3>
                 )}
                 {joinedDate && (
-                    <h3>Joined: {joinedDate.toLocaleDateString()}</h3>
+                    <h3>Joined: {joinedDate}</h3>
                 )}
                 {userProfileData?.followers && (
                     <h3>Followers: {userProfileData.followers}</h3>
