@@ -4,7 +4,7 @@
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     font-family: kanit;
 }
@@ -12,18 +12,5 @@
     border: 1px solid;
 } */
 .avatar > img {
-    width: 80%;
     border-radius: 120px;
-}
-.userName > h1 {
-    font-weight: 200;
-    font-size: 4rem;
-}
-.userName > h3 {
-    font-weight: 200;
-    font-size: 1.3rem;
-}
-.userDetails > h3 {
-    font-weight: 200;
-    font-size: 1.3rem;
 }
