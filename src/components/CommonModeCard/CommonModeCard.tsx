@@ -1,5 +1,6 @@
 import { ChessVariantStats } from "../../models/UserStats";
 import localStyles from "./CommonModeCard.module.css";
+import globalStyles from "../../Global.module.css";
 import { faArrowUpRightFromSquare ,faTrophy, faTimesCircle, faHandshake} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -35,18 +36,18 @@ function CommonModeCard({mode, stats, icon}: CommonModeCardProps):JSX.Element {
                 <div className={localStyles.variantRecordContainer}>
                     <div>
                         <FontAwesomeIcon icon={faTrophy}/>
-                        <p className={localStyles.recordTitle}> Wins</p>
-                        <p className={localStyles.recordScore}>{stats.record.win}</p>
+                        <p className={globalStyles.mediumTitle}> Wins</p>
+                        <p className={globalStyles.normalText}>{stats.record.win}</p>
                     </div>
                     <div>
                         <FontAwesomeIcon icon={faTimesCircle}/>
-                        <p className={localStyles.recordTitle}> Losses</p>
-                        <p className={localStyles.recordScore}>{stats.record.loss}</p>
+                        <p className={globalStyles.mediumTitle}> Losses</p>
+                        <p className={globalStyles.normalText}>{stats.record.loss}</p>
                     </div>
                     <div>
                         <FontAwesomeIcon icon={faHandshake}/>
-                        <p className={localStyles.recordTitle}> Draws</p>
-                        <p className={localStyles.recordScore}>{stats.record.draw}</p>
+                        <p className={globalStyles.mediumTitle}> Draws</p>
+                        <p className={globalStyles.normalText}>{stats.record.draw}</p>
                     </div>
                 </div>
             </div>
