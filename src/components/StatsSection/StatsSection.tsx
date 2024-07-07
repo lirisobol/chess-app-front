@@ -28,7 +28,7 @@ function StatsSection({userStatsData}: StatsSectionProps):JSX.Element | null {
 
             {userStatsData.chess960_daily && (
                 <CommonModeCard 
-                    mode="Daily 960"
+                    mode="960"
                     stats={userStatsData.chess960_daily}
                     icon={chess960Icon}
                 />
