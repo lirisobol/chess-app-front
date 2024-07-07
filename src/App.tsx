@@ -28,6 +28,7 @@ function App() {
 
     return (
         <Layout>
+            <div>Hello</div>
             <Home onSearch={onSearch} />
             {isLoading && <p>Loading...</p>}
             {error && <p>{error}</p>}
