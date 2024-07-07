@@ -1,23 +1,77 @@
 .commonModeCard {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
     height: 200px;
     width: 100%;
     border: 0.5px solid;
     border-radius: 30px;
     transition: all 0.2s linear;
+    font-family: kanit;
 }
 .commonModeCard:hover {
     box-shadow: 1px 2px 5px 1px;
 }
-.cardHeader { 
-    color: blue;
+/* Chess Variant Section */
+.cardHeaderSection { 
+    text-align: center;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-.cardRecord { 
-    color: blueviolet;
+.variantIcon {
+    width: 50%;
 }
-.cardBest { 
-    color: red;
+.variantIcon > img {
+    width: 4rem;
+}
+
+/* Chess Variant Record Section */
+.cardRecordSection { 
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.variantRecord {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.recordTitle, .bestTitle {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.recordScore, .bestScore {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+/* Chess Variant Best Section */
+.cardBestSection { 
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.variantBest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    
+}
+
+/* More Details / Advanced */
+.moreDetailsLink {
+    width: 10%;
+    display: flex;
+    justify-content: center
+    ;
 }
