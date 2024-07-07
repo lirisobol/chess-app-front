@@ -37,17 +37,17 @@
     align-items: center;
     justify-content: space-around;
 }
-.variantRecord {
+.variantRecordContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4rem;
 }
-.recordTitle, .bestTitle {
+.recordTitle {
     font-size: 1.6rem;
     font-weight: 400;
 }
-.recordScore, .bestScore {
+.recordScore {
     font-size: 1.2rem;
     font-weight: 300;
 }
@@ -56,22 +56,23 @@
     width: 30%;
     text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-.variantBest {
+/* .variantBest {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
-    
-}
+    gap: 3rem;  
+} */
 
 /* More Details / Advanced */
 .moreDetailsLink {
     width: 10%;
     display: flex;
-    justify-content: center
-    ;
+    justify-content: center;
+}
+.buttonIcon {
+    margin-left: 0.5rem;
 }
