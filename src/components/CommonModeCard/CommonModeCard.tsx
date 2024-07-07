@@ -13,8 +13,11 @@ function CommonModeCard({mode, stats, icon}: CommonModeCardProps):JSX.Element {
 
     return (
         <div className={localStyles.commonModeCard}>
+
             <div className={localStyles.cardHeader}>
-                <img src={icon} alt={`${mode} icon`} />
+                <div className={localStyles.variantIcon}>
+                    <img src={icon} alt={`${mode} icon`} />
+                </div>
                 <h3>{mode}</h3>
             </div>
 
