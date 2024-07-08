@@ -83,6 +83,11 @@
         gap: 1rem;
         align-items: center;
     }
+    .cardDataSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
     .variantIcon, .variantName{
         width: 4rem;
     }
