@@ -17,7 +17,7 @@ function CommonModeCard({mode, stats, icon}: CommonModeCardProps):JSX.Element {
 
     const handleMoreDetailsLink = () => {
         // TEMPORARY FOR TESTING !
-        window.open(stats.best.game, '_blank', 'noopener,noreferrer');
+        window.open("", '_blank', 'noopener,noreferrer');
     };
 
     return (
@@ -61,7 +61,7 @@ function CommonModeCard({mode, stats, icon}: CommonModeCardProps):JSX.Element {
 
             <div className={localStyles.moreDetailsLink}>
                 <button 
-                    className="btn btn-outline-dark rounded-pill" 
+                    className="btn btn-outline-light rounded-pill" 
                     onClick={handleMoreDetailsLink}
                     >
                     More Details 
