@@ -7,3 +7,10 @@
     gap: 1rem;
     color: white;
 }
+
+/* Small devices */
+@media (max-width: 576px) {
+    .statsSection {
+        padding: 0.5rem;
+    }
+}

@@ -23,16 +23,16 @@ function Home({onSearch}:HomeProps):JSX.Element {
                 <h4 className={localStyles.phrase}>" Vision Beyond the Board "</h4>
             </div>
 
-            <div>
+            <div className={localStyles.searchFormContainer}>
                 <form className={localStyles.searchForm} onSubmit={handleSubmit}>
                     <input
-                        className="form-control p-4 w-25 rounded-pill text-center text-bg-light focus-ring-light"
+                        className="form-control p-4 text-center"
                         type="text"
                         value={username}
                         onChange={(event) => setUserName(event.target.value)}
                         placeholder="Enter Chess.com username"
                     />
-                    <button className="btn btn-outline-light p-3 w-25 rounded-pill" type="submit">Search</button>
+                    <button className="btn btn-outline-light p-4" type="submit">Search</button>
                 </form>
             </div>
 

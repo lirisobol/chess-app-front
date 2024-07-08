@@ -4,7 +4,6 @@ import globalStyles from "../../Global.module.css";
 import { faArrowUpRightFromSquare ,faTrophy, faTimesCircle, faHandshake} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
 interface CommonModeCardProps {
     mode: string;
     stats: ChessVariantStats;
@@ -27,7 +26,9 @@ function CommonModeCard({mode, stats, icon}: CommonModeCardProps):JSX.Element {
                 <div className={localStyles.variantIcon}>
                     <img src={icon} alt={`${mode} icon`} />
                 </div>
-                <h3>{mode}</h3>
+                <div className={localStyles.variantName}>
+                    <h3>{mode}</h3>
+                </div>
             </div>
 
             <div className="vr"></div>
@@ -59,7 +60,7 @@ function CommonModeCard({mode, stats, icon}: CommonModeCardProps):JSX.Element {
 
             <div className="vr"></div>
 
-            <div className={localStyles.moreDetailsLink}>
+            <div className={localStyles.moreDetailsSection}>
                 <button 
                     className="btn btn-outline-light rounded-pill" 
                     onClick={handleMoreDetailsLink}

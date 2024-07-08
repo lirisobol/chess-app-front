@@ -13,3 +13,19 @@
     flex: 1;
     overflow-y: auto;
 }
+/* Small devices */
+@media (max-width: 576px) {
+    .dataSection {
+        flex-direction: column;
+        height: auto;
+    }
+    .profileWrapper {
+        flex: none;
+        max-height: none;
+        margin-bottom: 1rem;
+    }
+    .statsWrapper {
+        flex: none;
+        overflow-y: visible;
+    }
+}

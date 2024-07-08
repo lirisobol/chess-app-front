@@ -1,6 +1,21 @@
+/* 
+Small devices (up to 576px)
+Medium devices (up to 768px)
+Large devices (up to 992px)
+Extra large devices (up to 1200px)
+ */
+
 .layout {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-image: linear-gradient( 180.4deg,  rgba(7,7,9,1) 4%, rgba(27,24,70) 93.2% );
+    padding: 1rem;
+}
+
+/* Small devices */
+@media (max-width: 576px) {
+    .layout {
+        padding: 0.5rem;
+    }
 }

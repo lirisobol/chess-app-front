@@ -15,3 +15,13 @@
 .avatar > img {
     border-radius: 120px;
 }
+/* Small devices */
+@media (max-width: 576px) {
+    .profileSection {
+        flex-direction: column;
+    }
+    .avatar > img {
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+}
