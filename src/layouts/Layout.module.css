@@ -19,8 +19,14 @@ Extra large devices (up to 1200px)
         padding: 0.5rem;
     }
 }
-/* Small devices */
-@media (max-width: 768px) {
+/* Medium devices */
+@media (min-width: 575px) and (max-width: 768px) {
+    .layout {
+        padding: 0.7rem;
+    }
+}
+/* Medium to large devices */
+@media (min-width: 767px) and (max-width: 992px) {
     .layout {
         padding: 0.7rem;
     }

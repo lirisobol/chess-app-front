@@ -31,35 +31,35 @@ function CommonModeCard({mode, stats, icon}: CommonModeCardProps):JSX.Element {
                 </div>
             </div>
 
-
-            <div className={localStyles.cardRecordSection}>
-                <div className={localStyles.variantRecordContainer}>
-                    <div>
-                        <FontAwesomeIcon icon={faTrophy}/>
-                        <p className={globalStyles.mediumTitle}> Wins</p>
-                        <p className={globalStyles.normalText}>{stats.record.win}</p>
-                    </div>
-                    <div>
-                        <FontAwesomeIcon icon={faTimesCircle}/>
-                        <p className={globalStyles.mediumTitle}> Losses</p>
-                        <p className={globalStyles.normalText}>{stats.record.loss}</p>
-                    </div>
-                    <div>
-                        <FontAwesomeIcon icon={faHandshake}/>
-                        <p className={globalStyles.mediumTitle}> Draws</p>
-                        <p className={globalStyles.normalText}>{stats.record.draw}</p>
+            <div className={localStyles.cardDataSection}>
+                <div className={localStyles.cardRecordSection}>
+                    <div className={localStyles.variantRecordContainer}>
+                        <div>
+                            <FontAwesomeIcon icon={faTrophy}/>
+                            <p className={globalStyles.mediumTitle}> Wins</p>
+                            <p className={globalStyles.normalText}>{stats.record.win}</p>
+                        </div>
+                        <div>
+                            <FontAwesomeIcon icon={faTimesCircle}/>
+                            <p className={globalStyles.mediumTitle}> Losses</p>
+                            <p className={globalStyles.normalText}>{stats.record.loss}</p>
+                        </div>
+                        <div>
+                            <FontAwesomeIcon icon={faHandshake}/>
+                            <p className={globalStyles.mediumTitle}> Draws</p>
+                            <p className={globalStyles.normalText}>{stats.record.draw}</p>
+                        </div>
                     </div>
                 </div>
+
+                <div className={localStyles.cardBestSection}>
+                    future rating trend or more stats
+                </div>
             </div>
-
-            <div className={localStyles.cardBestSection}>
-                future rating trend or more stats
-            </div>
-
-
+            
             <div className={localStyles.moreDetailsSection}>
                 <button 
-                    className="btn btn-outline-light rounded-pill" 
+                    className="btn btn-outline-light rounded-pill p-2" 
                     onClick={handleMoreDetailsLink}
                     >
                     More Details 
