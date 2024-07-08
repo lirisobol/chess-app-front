@@ -53,19 +53,46 @@
     align-items: center;
     justify-content: space-around;
 }
-/* .variantBest {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;  
-} */
 
-/* More Details / Advanced */
-.moreDetailsLink {
+.moreDetailsSection {
+    padding: 1rem;
     width: 10%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
+
+
 .buttonIcon {
     margin-left: 0.5rem;
+}
+/* Small devices */
+@media (max-width: 576px) {
+    .commonModeCard {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+    .cardHeaderSection, .cardRecordSection, .cardBestSection {
+        width: 100%;
+    }
+    .cardHeaderSection {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+    }
+    .variantIcon, .variantName{
+        width: 4rem;
+    }
+    .variantIcon > img {
+        width: 3rem;
+    }
+    .variantRecordContainer {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .moreDetailsSection {
+        width: 90%;
+    }
 }
