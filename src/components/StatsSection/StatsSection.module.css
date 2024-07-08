@@ -11,6 +11,18 @@
 /* Small devices */
 @media (max-width: 576px) {
     .statsSection {
-        padding: 0.5rem;
+        padding: 0.2rem;
+    }
+}
+/* Medium devices */
+@media (min-width: 575px) and (max-width: 768px) {
+    .statsSection {
+        padding: 0.1rem;
+    }
+}
+/* Medium to large devices */
+@media (min-width: 767px) and (max-width: 992px) {
+    .statsSection {
+        padding: 0.1rem;
     }
 }

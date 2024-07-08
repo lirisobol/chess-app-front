@@ -25,3 +25,23 @@
         margin-bottom: 1rem;
     }
 }
+/* Medium devices */
+@media (min-width: 575px) and (max-width: 768px) {
+    .profileSection {
+        flex-direction: column;
+    }
+    .avatar > img {
+        width: 50%;
+        margin-right: 1rem;
+    }
+}
+/* Medium to large devices */
+@media (min-width: 767px) and (max-width: 992px) { 
+    .profileSection {
+        flex-direction: row;
+    }
+    .avatar > img {
+        width: 50%;
+        margin-right: 1rem;
+    }
+}

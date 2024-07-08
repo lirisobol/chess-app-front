@@ -12,7 +12,7 @@
 }
 .title {
     margin: 0;
-    font-size: 15rem;
+    font-size: 12rem;
     font-weight: 100;
     text-transform: uppercase;
 }
@@ -23,7 +23,7 @@
     font-style: italic;
 }
 .searchFormContainer {
-    width: 30%;
+    width: 40%;
 }
 .searchForm { 
     display: flex;
@@ -49,6 +49,38 @@
     }
     .searchForm input, .searchForm button {
         width: 80%;
+        padding: 0.5rem;
+    }
+}
+/* Medium devices */
+@media (min-width: 575px) and (max-width: 768px) {
+    .title {
+        font-size: 6.6rem;
+    }
+    .phrase {
+        font-size: 1rem;
+    }
+    .searchFormContainer {
+        width: 100%;
+    }
+    .searchForm input, .searchForm button {
+        width: 60%;
+        padding: 0.5rem;
+    }
+}
+/* Medium to large devices */
+@media (min-width: 767px) and (max-width: 992px) {
+    .title {
+        font-size: 9rem;
+    }
+    .phrase {
+        font-size: 1.3rem;
+    }
+    .searchFormContainer {
+        width: 100%;
+    }
+    .searchForm input, .searchForm button {
+        width: 50%;
         padding: 0.5rem;
     }
 }
