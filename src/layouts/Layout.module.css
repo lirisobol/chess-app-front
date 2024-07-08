@@ -3,7 +3,7 @@ Small devices (up to 576px)
 Medium devices (up to 768px)
 Large devices (up to 992px)
 Extra large devices (up to 1200px)
- */
+*/
 
 .layout {
     display: flex;
@@ -17,5 +17,11 @@ Extra large devices (up to 1200px)
 @media (max-width: 576px) {
     .layout {
         padding: 0.5rem;
+    }
+}
+/* Small devices */
+@media (max-width: 768px) {
+    .layout {
+        padding: 0.7rem;
     }
 }

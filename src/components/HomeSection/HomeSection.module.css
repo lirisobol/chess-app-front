@@ -52,3 +52,19 @@
         padding: 0.5rem;
     }
 }
+/* Small devices */
+@media (min-width: 575px) and (max-width: 768px) {
+    .title {
+        font-size: 6rem;
+    }
+    .phrase {
+        font-size: 1rem;
+    }
+    .searchFormContainer {
+        width: 100%;
+    }
+    .searchForm input, .searchForm button {
+        width: 60%;
+        padding: 0.5rem;
+    }
+}

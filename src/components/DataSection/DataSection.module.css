@@ -29,3 +29,18 @@
         overflow-y: visible;
     }
 }
+/* Medium devices */
+@media (min-width: 576px) and (max-width: 768px) {
+    .dataSection {
+        flex-direction: column;
+        height: auto;
+    }
+    .profileWrapper {
+        flex: none;
+        margin-bottom: 1rem;
+    }
+    .statsWrapper {
+        flex: none;
+        overflow-y: visible;
+    }
+}

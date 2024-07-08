@@ -93,6 +93,36 @@
         gap: 1rem;
     }
     .moreDetailsSection {
-        width: 90%;
+        width: 60%;
+    }
+}
+/* Small devices */
+@media (min-width: 575px) and (max-width: 768px) {
+    .commonModeCard {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+    .cardHeaderSection, .cardRecordSection, .cardBestSection {
+        width: 100%;
+    }
+    .cardHeaderSection {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+    }
+    .variantIcon, .variantName{
+        width: 4rem;
+    }
+    .variantIcon > img {
+        width: 3rem;
+    }
+    .variantRecordContainer {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .moreDetailsSection {
+        width: 50%;
     }
 }

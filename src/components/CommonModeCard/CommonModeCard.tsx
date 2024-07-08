@@ -31,7 +31,6 @@ function CommonModeCard({mode, stats, icon}: CommonModeCardProps):JSX.Element {
                 </div>
             </div>
 
-            <div className="vr"></div>
 
             <div className={localStyles.cardRecordSection}>
                 <div className={localStyles.variantRecordContainer}>
@@ -52,13 +51,11 @@ function CommonModeCard({mode, stats, icon}: CommonModeCardProps):JSX.Element {
                     </div>
                 </div>
             </div>
-            <div className="vr"></div>
 
             <div className={localStyles.cardBestSection}>
                 future rating trend or more stats
             </div>
 
-            <div className="vr"></div>
 
             <div className={localStyles.moreDetailsSection}>
                 <button 
