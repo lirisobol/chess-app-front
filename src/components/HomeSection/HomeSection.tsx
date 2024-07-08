@@ -26,13 +26,13 @@ function Home({onSearch}:HomeProps):JSX.Element {
             <div>
                 <form className={localStyles.searchForm} onSubmit={handleSubmit}>
                     <input
-                        className="form-control p-4 w-25 rounded-pill text-center"
+                        className="form-control p-4 w-25 rounded-pill text-center text-bg-light focus-ring-light"
                         type="text"
                         value={username}
                         onChange={(event) => setUserName(event.target.value)}
                         placeholder="Enter Chess.com username"
                     />
-                    <button className="btn btn-dark p-3 w-25 rounded-pill" type="submit">Search</button>
+                    <button className="btn btn-outline-light p-3 w-25 rounded-pill" type="submit">Search</button>
                 </form>
             </div>
 
